@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int days_lived;
+    cout << "Enter the number of days lived: ";
+    cin >> days_lived;
+    
+    int years = days_lived / 365;
+    int weeks = (days_lived % 365) / 7; 
+    int days = (days_lived % 365) % 7;
+    
+    cout << "You have lived for " << years << " years, " << weeks << " weeks, and " << days << " days." << endl;
+    return 0;
+}
